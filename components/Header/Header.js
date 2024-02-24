@@ -7,9 +7,6 @@ import { Link as LinkScroll } from 'react-scroll'
 
 export default function Header() {
 
-
-
-	// sticky top-0
 	return (
 		<header className='bg-base-100 
 		

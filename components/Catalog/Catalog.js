@@ -20,8 +20,8 @@ const Catalog = ({ handleOrderClick }) => {
 							<h4 className="text-lg font-semibold mt-4">{item.title}</h4>
 							<div className="pb-2 pt-1 font-light text-sm text-gray-400">Артикль: 100{item.id}</div>
 							<div className="flex items-center gap-3">
-								<strong className="text-2xl font-medium text-gray-800">{item.price} BYN</strong>
-								<span className="font-medium text-gray-500 line-through">{(item.price / 100 * item.discount) + item.price} BYN</span>
+								<strong className="text-2xl font-medium text-gray-800">от {item.price} BYN</strong>
+								<span className="font-medium text-gray-500 line-through">{((item.price / 100 * item.discount) + item.price).toFixed(2)} BYN</span>
 								<span className="text-green-500 text-sm font-semibold">-{item.discount}%</span>
 							</div>
 							<div className="flex items-center gap-2 mt-2">
