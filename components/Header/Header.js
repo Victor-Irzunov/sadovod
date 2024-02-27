@@ -141,28 +141,27 @@ export default function Header() {
 								Режим работы:
 							</p>
 							<p className=''>
-								8:00-20:00
+								9:00-21:00
 							</p>
 							<p className=''>
-								Выходной: <span className='text-red-500'>ВС</span>
+								{/* Выходной: <span className='text-red-500'>ВС</span> */}
+								Без выходных
 							</p>
 						</div>
-					
+
 						<div className='flex flex-col'>
-							<a href='tel:80290000000'
+							<a href='tel:80339026046'
 								className='link link-hover flex'
-								onClick={() => gtag_report_conversion('/')}
-
+							// onClick={() => gtag_report_conversion('/')}
 							>
-								+375 29 000-00-00
-								<Image src='/svg/a1.svg' alt='Телефон оператора А1' width={15} height={15} className='ml-1.5 sd:block xz:hidden' />
+								+375 33 902-60-46
+								<Image src='/svg/mts.svg' alt='Телефон оператора МТС' width={40} height={40} className='ml-1.5 sd:block xz:hidden' />
 							</a>
-							<a href='tel:80290000000'
-								className='link link-hover flex'
-								onClick={() => gtag_report_conversion('/')}
-
+							<a href='tel:80336177776'
+								className='link link-hover flex pl-1'
+							// onClick={() => gtag_report_conversion('/')}
 							>
-								+375 29 000-00-00
+								+375 33 617-77-76
 								<Image src='/svg/mts.svg' alt='Телефон оператора МТС' width={40} height={40} className='ml-2 sd:block xz:hidden' />
 							</a>
 						</div>
